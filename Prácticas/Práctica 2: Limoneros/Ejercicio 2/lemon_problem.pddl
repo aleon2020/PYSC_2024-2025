@@ -1,5 +1,5 @@
-(define (problem lemon_fluent)
-(:domain lemon_fluent)
+(define (problem lemon_durative)
+(:domain lemon_durative)
 
 (:objects
   base limonero1 limonero2 limonero3 limonero4 limonero5 - location
