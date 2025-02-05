@@ -1,5 +1,5 @@
 (define (problem get-paid)
-  (:domain briefcase-world)
+(:domain briefcase-world)
 
 (:objects 
   home office - location
