@@ -1,8 +1,6 @@
 (define (domain exploration_example_domain)
 (:requirements :strips :typing)
 
-
-; Types definition
 (:types
   location
   robot
@@ -87,11 +85,9 @@
     (and 
       (robot_at ?r ?l)
       (soil_at ?s ?l)
-
-      ; MODIFICACIÓN
+      ; Nueva precondición
+      ; La pinza del robot debe estar libre.
       (gripper_free ?r)
-      ; ------------
-      
     )
   :effect 
     (soil_analysed ?s)

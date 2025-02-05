@@ -1,8 +1,6 @@
 (define (domain exploration_example_domain)
 (:requirements :strips :typing)
 
-
-; Types definition
 (:types
   location
   robot
