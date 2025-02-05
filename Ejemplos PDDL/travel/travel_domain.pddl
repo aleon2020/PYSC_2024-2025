@@ -15,15 +15,14 @@
     (distance ?c1 ?c2 - city)
   )
 
-  (:durative-action drive
+  (:action drive
     :parameters (?v - vehicle ?c1 ?c2 - city)
-    :duration (= ?duration 1)
-    :condition (and (at start (connected ?c1 ?c2))
-                    (at start (vehicle_at ?v ?c1))
+    :precondition (and (connected ?c1 ?c2)
+                    (vehicle_at ?v ?c1)
                     )
-    :effect (and (at start (not (vehicle_at ?v ?c1)))
-                 (at end (vehicle_at ?v ?c2))
-                 (at end(increase (distance_traveled ?v) (distance ?c1 ?c2)))
+    :effect (and (not (vehicle_at ?v ?c1))
+                 (vehicle_at ?v ?c2)
+                 (increase (distance_traveled ?v) (distance ?c1 ?c2))
                  )
   )  
 
