@@ -8,7 +8,6 @@
 )
 
 (:init
-  ; Conexiones entre ubicaciones
   (connected limonero1 limonero2)
   (connected limonero2 limonero1)
   (connected limonero2 base)
@@ -46,11 +45,9 @@
   (= (locations_distance Large-Deposit limonero4) 10)
   (= (locations_distance Large-Deposit limonero5) 10)
 
-  ; Ubicación inicial del robot y la cesta
   (robot_at robot1 base)
   (gripper_free robot1)
 
-  ; Ubicación de los limones en los árboles
   (lemon_at limon1 limonero1)
   (lemon_at limon2 limonero1)
   (lemon_at limon3 limonero2)
@@ -61,10 +58,10 @@
   (lemon_at limon8 limonero4)
   (lemon_at limon9 limonero5)
   (lemon_at limon10 limonero5)
-    
-  ; Pesos y capacidades
+
   (= (max_basket_capacity robot1) 50)
   (= (current_basket_weight robot1) 0)
+  
   (= (lemon_weight limon1) 10)
   (= (lemon_weight limon2) 10)
   (= (lemon_weight limon3) 10)
@@ -91,4 +88,5 @@
     (lemon_at limon10 base)
   )
 )
+
 )
