@@ -1,0 +1,22 @@
+set instance curiosity robot
+set instance base location
+set instance valley location
+set instance crater location
+set instance rock sample
+set instance mineral sample
+set instance valley_soil soil
+set instance crater_soil soil
+
+set predicate (robot_at curiosity base)
+
+set predicate (gripper_free curiosity)
+
+set predicate (sample_at rock crater)
+set predicate (sample_at mineral valley)
+
+set predicate (soil_at valley_soil valley)
+set predicate (soil_at crater_soil crater)
+
+set predicate (occupied_robot curiosity)
+
+set goal (and (sample_at rock base) (sample_at mineral base) (soil_analysed valley_soil) (soil_analysed crater_soil))
