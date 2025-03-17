@@ -1,0 +1,11 @@
+# vscode
+.vscode/
+
+# Accidental build directories
+build/
+install/
+log/
+
+# Compiled Python objects
+*.pyc
+*.pyo

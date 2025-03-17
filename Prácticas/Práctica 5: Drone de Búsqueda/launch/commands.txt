@@ -1,0 +1,27 @@
+set instance drone_1 drone
+set instance base location
+set instance z1 location
+set instance z2 location
+set instance z3 location
+set instance z4 location
+set instance pers_1 person
+set instance pers_2 person
+set instance pers_3 person
+set instance pers_4 person
+
+set predicate (drone_at drone_1 base)
+set predicate (connected base z1)
+set predicate (connected z1 base)
+set predicate (connected base z4)
+set predicate (connected z4 base)
+set predicate (connected z1 z2)
+set predicate (connected z2 z1)
+set predicate (connected z1 z3)
+set predicate (connected z3 z1)
+
+set predicate (person_at pers_1 z1)
+set predicate (person_at pers_2 z2)
+set predicate (person_at pers_3 z3)
+set predicate (person_at pers_4 z4)
+
+set goal (and (person_found pers_1) (person_found pers_2) (person_found pers_3) (person_found pers_4))
