@@ -1,0 +1,81 @@
+set instance peepo robot
+set instance entrance hall
+set instance large_table1 table
+set instance large_table2 table
+set instance rubik_table table
+set instance big_table1 table
+set instance big_table2 table
+set instance bookshelf1 bookshelf
+set instance bookshelf2 bookshelf
+set instance bookshelf3 bookshelf
+set instance bookshelf4 bookshelf
+set instance bookshelf5 bookshelf
+set instance bookshelf6 bookshelf
+set instance bookshelf7 bookshelf
+set instance bookshelf8 bookshelf
+set instance book1 book
+set instance book2 book
+set instance book3 book
+set instance book4 book
+set instance rubik_cube miscellaneus
+set instance trash miscellaneus
+set instance visitor1 visitor
+
+set predicate (robot_at peepo entrance)
+set predicate (gripper_free peepo)
+set predicate (robot_not_busy peepo)
+
+set predicate (object_at book1 bookshelf1)
+set predicate (object_at book2 bookshelf2)
+set predicate (object_at book3 large_table1)
+set predicate (object_at book4 large_table2)
+set predicate (object_at rubik_cube rubik_table)
+set predicate (object_at trash big_table1)
+
+set predicate (visitor_at visitor1 entrance)
+
+set predicate (noise_at large_table1)
+set predicate (noise_at large_table2)
+
+set predicate (connected entrance large_table2)
+set predicate (connected large_table2 entrance)
+set predicate (connected entrance rubik_table)
+set predicate (connected rubik_table entrance)
+set predicate (connected entrance bookshelf1)
+set predicate (connected bookshelf1 entrance)
+set predicate (connected entrance big_table1)
+set predicate (connected big_table1 entrance)
+set predicate (connected large_table1 bookshelf3)
+set predicate (connected bookshelf3 large_table1)
+set predicate (connected large_table1 bookshelf4)
+set predicate (connected bookshelf4 large_table1)
+set predicate (connected large_table1 big_table1)
+set predicate (connected big_table1 large_table1)
+set predicate (connected large_table2 rubik_table)
+set predicate (connected rubik_table large_table2)
+set predicate (connected large_table2 big_table1)
+set predicate (connected big_table1 large_table2)
+set predicate (connected bookshelf1 bookshelf2)
+set predicate (connected bookshelf2 bookshelf1)
+set predicate (connected bookshelf2 bookshelf3)
+set predicate (connected bookshelf3 bookshelf2)
+set predicate (connected bookshelf3 bookshelf4)
+set predicate (connected bookshelf4 bookshelf3)
+set predicate (connected bookshelf4 bookshelf5)
+set predicate (connected bookshelf5 bookshelf4)
+set predicate (connected bookshelf5 bookshelf6)
+set predicate (connected bookshelf6 bookshelf5)
+set predicate (connected bookshelf6 bookshelf7)
+set predicate (connected bookshelf7 bookshelf6)
+set predicate (connected bookshelf7 bookshelf8)
+set predicate (connected bookshelf8 bookshelf7)
+set predicate (connected bookshelf7 big_table1)
+set predicate (connected big_table1 bookshelf7)
+set predicate (connected bookshelf8 big_table2)
+set predicate (connected big_table2 bookshelf8)
+set predicate (connected big_table1 big_table2)
+set predicate (connected big_table2 big_table1)
+
+set goal (and (object_at book3 bookshelf1) (object_at book4 bookshelf2) (visitor_at visitor1 large_table1) (solved rubik_cube) (object_at trash entrance) (quiet large_table2) (quiet large_table1))
+
+

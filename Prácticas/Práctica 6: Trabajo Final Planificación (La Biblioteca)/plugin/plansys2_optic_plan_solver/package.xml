@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>plansys2_optic_plan_solver</name>
+  <version>2.0.9</version>
+  
+  <description>This package contains the PDDL-based Planner module for the ROS2 Planning System</description>
+
+  <maintainer email="a.leon.2020@alumnos.urjc.es">Alberto León Luengo</maintainer>
+  <maintainer email="t.mari.2021@alumnos.urjc.es">Toni Marí Marí</maintainer>
+  <maintainer email="j.martinm.2021@alumnos.urjc.es">Jorge Martín Mínguez</maintainer>
+  <maintainer email="l.morenog.2021@alumnos.urjc.es">Luis Moreno García</maintainer>
+
+  <license>Apache License, Version 2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>ament_index_cpp</depend>
+  <depend>plansys2_core</depend>
+  <depend>pluginlib</depend>
+  
+  <exec_depend>popf</exec_depend>
+
+  <test_depend>ament_lint_common</test_depend>
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_cmake_gtest</test_depend>
+  <test_depend>ros2run</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+    <plansys2_core plugin="${prefix}/plansys2_optic_plan_solver.xml" />
+  </export>
+</package>

@@ -1,0 +1,97 @@
+move:
+  ros__parameters:
+    plugins:
+      - plansys2_envidio33_move_bt_node
+    waypoints: ["origin", "entrance", "large_table1", "large_table2", "rubik_table", 
+                "big_table1", "big_table2", "boolshelf1", 
+                "bookshelf5", "bookshelf6", 
+                "bookshelf7"]
+    waypoint_coords:
+      origin: [0.0, 0.0, 0.0]
+      entrance: [-0.5578248500823975, 5.215611934661865, -0.005340576171875]
+      large_table1: [5.689949989318848, -6.2759928703308105, 0.00250244140625]
+      large_table2: [-5.451545238494873, 5.998283386230469, -0.005279541015625]
+      rubik_table: [-2.4457497596740723, 4.30706787109375, -0.005279541015625]
+      big_table1: [-0.7775856256484985, -1.55166757106781, 0.002471923828125]
+      big_table2: [-5.290745735168457, -3.0700297355651855, 0.002471923828125]
+      boolshelf1: [6.902610778808594, 0.6888687610626221, 0.0025634765625]
+      bookshelf5: [3.0867722034454346, -6.371601104736328, -0.001434326171875]
+      bookshelf6: [0.5140597224235535, -6.358348846435547, -0.001434326171875]
+      bookshelf7: [-2.4720592498779297, -6.331623554229736, -0.001434326171875]
+solve:
+  ros__parameters:
+    plugins:
+      - plansys2_envidio33_pick_bt_node
+      - plansys2_envidio33_do_cube_bt_node
+      - plansys2_envidio33_drop_bt_node
+guide_visitor:
+  ros__parameters:
+    plugins:
+      - plansys2_envidio33_pick_up_bt_node
+      - plansys2_envidio33_move_bt_node
+      - plansys2_envidio33_leave_bt_node
+    waypoints: ["origin", "entrance", "large_table1", "large_table2", "rubik_table", 
+                "big_table1", "big_table2", "boolshelf1", 
+                "bookshelf5", "bookshelf6", 
+                "bookshelf7"]
+    waypoint_coords:
+      origin: [0.0, 0.0, 0.0]
+      entrance: [-0.5578248500823975, 5.215611934661865, -0.005340576171875]
+      large_table1: [5.689949989318848, -6.2759928703308105, 0.00250244140625]
+      large_table2: [-5.451545238494873, 5.998283386230469, -0.005279541015625]
+      rubik_table: [-2.4457497596740723, 4.30706787109375, -0.005279541015625]
+      big_table1: [-0.7775856256484985, -1.55166757106781, 0.002471923828125]
+      big_table2: [-5.290745735168457, -3.0700297355651855, 0.002471923828125]
+      boolshelf1: [6.902610778808594, 0.6888687610626221, 0.0025634765625]
+      bookshelf5: [3.0867722034454346, -6.371601104736328, -0.001434326171875]
+      bookshelf6: [0.5140597224235535, -6.358348846435547, -0.001434326171875]
+      bookshelf7: [-2.4720592498779297, -6.331623554229736, -0.001434326171875]
+search_book:
+  ros__parameters:
+    plugins:
+      - plansys2_envidio33_move_bt_node
+      - plansys2_envidio33_search_bt_node
+    waypoints: ["origin", "entrance", "large_table1", "large_table2", "rubik_table", 
+                "big_table1", "big_table2", "boolshelf1", 
+                "bookshelf5", "bookshelf6", 
+                "bookshelf7"]
+    waypoint_coords:
+      origin: [0.0, 0.0, 0.0]
+      entrance: [-0.5578248500823975, 5.215611934661865, -0.005340576171875]
+      large_table1: [5.689949989318848, -6.2759928703308105, 0.00250244140625]
+      large_table2: [-5.451545238494873, 5.998283386230469, -0.005279541015625]
+      rubik_table: [-2.4457497596740723, 4.30706787109375, -0.005279541015625]
+      big_table1: [-0.7775856256484985, -1.55166757106781, 0.002471923828125]
+      big_table2: [-5.290745735168457, -3.0700297355651855, 0.002471923828125]
+      boolshelf1: [6.902610778808594, 0.6888687610626221, 0.0025634765625]
+      bookshelf5: [3.0867722034454346, -6.371601104736328, -0.001434326171875]
+      bookshelf6: [0.5140597224235535, -6.358348846435547, -0.001434326171875]
+      bookshelf7: [-2.4720592498779297, -6.331623554229736, -0.001434326171875]
+move_object:
+  ros__parameters:
+    plugins:
+      - plansys2_envidio33_pick_bt_node
+      - plansys2_envidio33_move_bt_node
+      - plansys2_envidio33_drop_bt_node
+    waypoints: ["origin", "entrance", "large_table1", "large_table2", "rubik_table", 
+                "big_table1", "big_table2", "boolshelf1", 
+                "bookshelf5", "bookshelf6", 
+                "bookshelf7"]
+    waypoint_coords:
+      origin: [0.0, 0.0, 0.0]
+      entrance: [-0.5578248500823975, 5.215611934661865, -0.005340576171875]
+      large_table1: [5.689949989318848, -6.2759928703308105, 0.00250244140625]
+      large_table2: [-5.451545238494873, 5.998283386230469, -0.005279541015625]
+      rubik_table: [-2.4457497596740723, 4.30706787109375, -0.005279541015625]
+      big_table1: [-0.7775856256484985, -1.55166757106781, 0.002471923828125]
+      big_table2: [-5.290745735168457, -3.0700297355651855, 0.002471923828125]
+      boolshelf1: [6.902610778808594, 0.6888687610626221, 0.0025634765625]
+      bookshelf5: [3.0867722034454346, -6.371601104736328, -0.001434326171875]
+      bookshelf6: [0.5140597224235535, -6.358348846435547, -0.001434326171875]
+      bookshelf7: [-2.4720592498779297, -6.331623554229736, -0.001434326171875]
+shut_up:
+  ros__parameters:
+    plugins:
+      - plansys2_envidio33_stand_up_bt_node
+      - plansys2_envidio33_say_shhh_bt_node
+      - plansys2_envidio33_stand_down_bt_node

@@ -1,0 +1,9 @@
+<root BTCPP_format="4" main_tree_to_execute = "MainTree" >
+    <BehaviorTree ID="MainTree">
+       <Sequence name="root_sequence">
+           <Pick name="pick"/>
+           <Move name="move" goal="{arg3}"/>
+           <Drop name="drop"/>
+       </Sequence>
+    </BehaviorTree>
+</root>
