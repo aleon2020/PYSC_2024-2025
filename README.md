@@ -22,7 +22,7 @@ git pull
 
 ## 1. Resumen de los contenidos de teoría
 
-Fichero ['Resumen Teoría PYSC.pdf'](https://docs.google.com/document/d/1cGYJx0eRPHJekrP5xCGwxqXBpfb0FVJOIGa5Odo_jWE/edit?usp=sharing): Resumen de teoría en formato PDF.
+Fichero ['Resumen Teoría PYSC.pdf'](https://github.com/aleon2020/PYSC_2024-2025/blob/main/Resumen%20Teor%C3%ADa%20PYSC.pdf): Resumen de teoría en formato PDF.
 
 IMPORTANTE: Para hacer uso del índice interactivo que viene implementado en el resumen, debes descargar el documento en formato PDF.
 
