@@ -30,10 +30,6 @@ IMPORTANTE: Para hacer uso del índice interactivo que viene implementado en el 
 
 Directorio ['Diapositivas Teoría'](https://github.com/aleon2020/PYSC_2024-2025/tree/main/Diapositivas%20Teor%C3%ADa): Dentro de este directorio se encuentran las diapositivas utilizadas en clase para abordar los contenidos teóricos de la asignatura.
 
-## 3. Exámenes
-
-Directorio ['Exámenes'](https://github.com/aleon2020/PYSC_2024-2025/tree/main/Ex%C3%A1menes): Contiene cada uno de los exámenes realizados en cada una de las diferentes convocatorias de cada uno de los bloques vistos en la asignatura.
-
-## 4. Prácticas
+## 3. Prácticas
 
 Directorios ['Prácticas'](https://github.com/aleon2020/PYSC_2024-2025/tree/main/Pr%C3%A1cticas): Este directorio contiene cada una de las prácticas realizadas en la asignatura.
